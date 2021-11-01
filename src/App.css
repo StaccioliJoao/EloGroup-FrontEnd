@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +32,224 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.register-container {
+  overflow: auto;
+  padding: 30px;
+  margin: 30px auto;
+  min-height: 300px;
+  max-width: 350px;
+  border: 1px solid black;
+}
+
+.Register {
+  flex-direction: column;
+  display: flex;
+  margin: 25px;
+  max-width: 350px;
+  margin-bottom: 25px;
+}
+.Leads-Register {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 350px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.infos{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.Leadsinfos{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  max-width: 220px;
+}
+
+.userLabel {
+  font-size: small;
+  float: left;
+  width: 5em;
+  margin-right: 1em;
+  }
+.passLabel {
+  font-size: small;
+  float: left;
+  margin-right: 10.8em;
+  }
+.confLabel {
+  font-size: small;
+  float: left;
+  margin-right: 4.05em;
+  }
+
+.registerButton {
+    background-color: #ffffff;
+    border: 1px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1.5em;
+    font-size: 16px;
+    width: 92%;
+  }
+.registerLeadButton {
+    background-color: rgb(33, 150, 243);
+    border: none;
+    color: white;
+    margin-left: 100%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1.5em;
+    font-size: 16px;
+    width: 215%;
+  }
+
+  .infos p {
+    color: red;
+    font-size: small;
+  }
+
+  .Leadsinfos p {
+    color: red;
+    font-size: small;
+  }
+
+  .opError {
+    color: red;
+    font-size: small;
+    padding-top: 1%;
+    float: right;
+  }
+  .error {
+    border: 1.25px solid red !important;
+  }
+
+  .center-screen{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.leads-container{
+  overflow: auto;
+  padding: 30px;
+  margin: 20px auto;
+  max-height: 600px;
+  max-width: 900px;
+  border: 1px solid black;
+}
+.Registerleads-container{
+  overflow: auto;
+  padding: 30px;
+  margin: 30px auto;
+  max-height: 500px;
+  width: 800px;
+  border: 1px solid black;
+}
+
+.leads-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.leads-top-text{
+  padding-left: 5em;
+  padding-right: 4em;
+  margin: auto auto;
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+}
+
+.addButton {
+  margin-top: 6%;
+  width: 280px;
+  height: 50px;
+  background-color: rgb(33, 150, 243);
+  border-style: hidden;
+  color: white;
+  font-weight: 600;
+}
+
+.leadsTable{
+  min-width: 800px;
+  margin-top: 1%;
+  border-collapse: collapse;
+  border: 1px solid black;
+
+}
+
+thead{
+  background-color: #9e9e9e;
+  color: white;
+}
+
+th,tr,td{
+  border: 1px solid black;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+
+td{
+  color: black;
+}
+
+tbody>tr:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+table.leadsTable>thead>tr {
+  height: 5rem;
+  border: 1px solid black;
+}
+
+table.leadsTable>tbody>td {
+  height: 5rem;
+  border: 1px solid black;
+}
+table.leadsTable>tbody>tr>td{
+  height: 5rem;
+  border: 1px solid black;
+}
+
+
+.opLabel{
+  font-size: small;
+  margin-left: 100%;
+}
+
+.NewLeadTable{
+  border: 1px solid black;
+  margin-left: 100%;
+  min-width: 215%;
+}
+
+.Invisible{
+  color: transparent;
+  background-color: #e6e6e6;
+  height: 23.67px;
+}
+
+table.NewLeadTable>td{
+  border: 1px solid black;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+
+.checkbox {
+  width: 20px;
 }
