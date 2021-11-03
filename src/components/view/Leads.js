@@ -34,11 +34,16 @@ function Leads(){
 
   const onDrop = (e,cat,key)=>{
     let status = e.dataTransfer.getData('status');
+    let id = e.dataTransfer.getData('id');
     leads = JSON.parse(localStorage.getItem('Lead'));
-    console.log('before ',leads[key].status)
-    leads[key].status = String(parseInt(status)+1)
-    localStorage.setItem('Lead',JSON.stringify(leads))
-    window.location.reload();
+    if(leads[key].nome === id){
+      leads[key].status = String(parseInt(status)+1)
+      localStorage.setItem('Lead',JSON.stringify(leads))
+      window.location.reload();
+    }else{
+      alert('Não é possível mover o Lead para outra fileira')
+    }
+
   }
   return (
     <div className="leads-container center-screen">
